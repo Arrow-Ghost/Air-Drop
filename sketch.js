@@ -56,7 +56,12 @@ function draw() {
   packageSprite.y= packageBody.position.y 
   drawSprites();
 
-	
+  if(keyDown(RIGHT_ARROW)){
+  helicopter.x = helicopter.x+50;
+  }	
+  if(keyDown(LEFT_ARROW)){
+  helicopter.x  = helicopter.x-50;
+  }	
   if(keyDown(DOWN_ARROW)) {
 	Matter.Body.setStatic(packageBody,false);
 	}	
