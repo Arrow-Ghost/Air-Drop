@@ -57,10 +57,10 @@ function draw() {
   drawSprites();
 
   if(keyDown(RIGHT_ARROW)){
-  helicopter.x = helicopter.x+50;
+  helicopter.velocityX = 2;
   }	
   if(keyDown(LEFT_ARROW)){
-  helicopter.x  = helicopter.x-50;
+  helicopter.velocityY = -2;
   }	
   if(keyDown(DOWN_ARROW)) {
 	Matter.Body.setStatic(packageBody,false);
